@@ -2,8 +2,7 @@ export default class TabNav {
   constructor (menu, content){
     this.tabMenu = document.querySelectorAll(menu);
     this.tabContent = document.querySelectorAll(content);
-
-    this.activeClass = 'ativo'
+    this.activeClass = 'ativo';
 
   }
   
@@ -16,8 +15,8 @@ export default class TabNav {
     }
 
     addTabNavEvent(){
-    this.tabMenu.forEach((itemMenu, index) => {
-      itemMenu.addEventListener('click', () => this.activeTab(index));
+      this.tabMenu.forEach((itemMenu, index) => {
+        itemMenu.addEventListener('click', () => this.activeTab(index));
       });
     }
 
